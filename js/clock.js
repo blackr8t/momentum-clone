@@ -3,7 +3,7 @@ const clockTime = document.querySelector('.js-clock__time');
 
 
 function convertTwoDigit(num) {
-	return num < 10 ? `0${num}` : num
+	return num < 10 ? `0${num}` : num;
 }
 
 
