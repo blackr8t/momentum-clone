@@ -5,8 +5,8 @@ const deceasedCls = document.querySelector('.js-corona__deceased');
 const positivityRateCls = document.querySelector('.js-corona__positivityRate');
 
 
-async function loadCoronaStatus() {
-	await fetch(
+function loadCoronaStatus() {
+	fetch(
 		'https://api.apify.com/v2/key-value-stores/TMFbhs7qtXpGpeaeP/records/LATEST?disableRedirect=true'
 	).then(function (response) {
 		return response.json();
