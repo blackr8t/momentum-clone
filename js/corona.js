@@ -37,7 +37,7 @@ async function loadCoronaStatus() {
 
 	}).then(function (corona) {
 		// Local Storage 저장
-	})
+	});
 }
 
 function init() {
