@@ -1,0 +1,10 @@
+@import "header.css";
+@import "main.css";
+
+.no-show {
+	display: none;
+}
+
+.show {
+	display: block;
+}

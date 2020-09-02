@@ -1,0 +1,42 @@
+.js-corona {
+	display: flex;
+}
+
+.js-corona__title {
+	font-size: 60px;
+	font-weight: 600;
+	margin-right: 30px;
+}
+
+.js-corona__subtitle {
+	font-size: 20px;
+	margin-right: 12px;
+}
+
+.js-corona__item {
+	padding: 8px 0px;
+
+	display: flex;
+	align-items: baseline;
+}
+
+.js-corona__infected,
+.js-corona__discharged,
+.js-corona__isolated,
+.js-corona__deceased,
+.js-corona__positivityRate {
+	font-size: 50px;
+}
+
+.js-corona__infected {
+	margin-left: 32px;
+}
+
+.js-corona__deceased {
+	margin-left: 95px;
+}
+
+.js-corona__positivityRate {
+	font-size: 40px;
+	margin-left: 80px;
+}

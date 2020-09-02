@@ -1,0 +1,13 @@
+@import "clock.css";
+@import "corona.css";
+@import "search.css";
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: white;
+	font-weight: 600;
+}
