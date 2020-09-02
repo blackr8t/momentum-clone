@@ -28,7 +28,6 @@ async function loadCoronaStatus() {
 		}
 
 	}).then(function (corona) {
-		console.log(corona);
 		// HTML 표현
 		infectedCls.innerHTML = corona.infected;
 		dischargedCls.innerHTML = corona.discharged;
