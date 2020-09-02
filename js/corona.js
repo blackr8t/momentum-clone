@@ -17,8 +17,8 @@ function loadCoronaStatus() {
 			discharged: json.discharged, // 완치 (격리해제)
 			isolated: json.isolated, // 치료중(격리중)
 			deceased: json.deceased, // 사망
-			positivityRate: json.lastUpdatedAtSource, // 마지막 업데이트
-			lastUpdatedAt: json.positivityRate, // 확진율
+			positivityRate: json.positivityRate, // 확진율
+			lastUpdatedAt: json.lastUpdatedAtSource, // 마지막 업데이트
 		}
 
 	}).then(function (corona) {
