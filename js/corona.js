@@ -12,19 +12,13 @@ function loadCoronaStatus() {
 		return response.json();
 	}).then(function (json) {
 		// 데이터 파싱
-		const infected = json.infected; //  누적 확진자
-		const discharged = json.discharged; // 완치 (격리해제)
-		const isolated = json.isolated; // 치료중(격리중)
-		const deceased = json.deceased; // 사망
-		const lastUpdatedAt = json.lastUpdatedAtSource; // 마지막 업데이트
-		const positivityRate = json.positivityRate;
 		return {
-			infected,
-			discharged,
-			isolated,
-			deceased,
-			positivityRate,
-			lastUpdatedAt,
+			infected: json.infected, // 누적 확진자
+			discharged: json.discharged, // 완치 (격리해제)
+			isolated: json.isolated, // 치료중(격리중)
+			deceased: json.deceased, // 사망
+			positivityRate: json.lastUpdatedAtSource, // 마지막 업데이트
+			lastUpdatedAt: json.positivityRate, // 확진율
 		}
 
 	}).then(function (corona) {
