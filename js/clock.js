@@ -15,7 +15,7 @@ function curDateTime() {
 	const hour = convertTwoDigit(date.getHours());
 	const minute = convertTwoDigit(date.getMinutes());
 
-	let dayOfWeek = ['일', '월', '화', '수', '금', '토'][date.getDay()];
+	let dayOfWeek = ['일', '월', '화', '수', '목', '금', '토'][date.getDay()];
 
 
 	clockDate.innerHTML = year + '.' + month + '.' + day + ' ' + dayOfWeek + '요일';
